@@ -1,10 +1,5 @@
 #include <cstdlib>
-
-void _add(int a, int b, int* c)
-{
-    int d = a + b;
-   *c = d;
-}
+#include "mylib.h"
 
 extern "C" {
     void addxx(int a, int b, int* c) {
@@ -12,7 +7,7 @@ extern "C" {
     }
 
     void subxxx(int a, int b, int* c) {
-        _add(a, -b, c);
+        _sub(a, b, c);
     }
 }
 
