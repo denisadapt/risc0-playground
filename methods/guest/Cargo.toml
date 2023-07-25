@@ -10,6 +10,8 @@ edition = "2021"
 # If you want to try (experimental) std support, add `features = [ "std" ]` to risc0-zkvm
 risc0-zkvm = { version = "0.15.3", default-features = false, features = ["std"] }
 libc = "0.2.145"
+hex = "0.4.3"
+blake2b_simd = "1.0.1"
 
 [build-dependencies]
 cc = "1.0"
